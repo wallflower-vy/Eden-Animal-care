@@ -1,8 +1,8 @@
 <template>
    
  <div>
-  <div class="md:px-[8rem] px-[1rem] py-[3rem]  bg-[url('public/images/pexels-johann-1254140.jpg')] bg bg-center  bg-cover h-[800px] w-full">
- <div class="flex items-center " > 
+  <div class="md:px-[8rem] px-[1rem] py-[3rem]  bg-[#061614] bg bg-center  bg-cover h-[800px] w-full">
+ <div class="flex items-center justify-between " > 
 
     <div class="md:w-[15%]">
         <router-link :to="{name : 'home'}" >
@@ -20,16 +20,12 @@
    
     <input type="text"    @change="searchDogs"  v-model="keyword" class="rounded w-full border-2 border-gray-200" placeholder="Search for meals"/>
     </div>
-    <div class="w-[30%] flex text-white">
-        <!-- <router-link :to="{name : 'search'}"  class="px-6">search</router-link> -->
-    <a href="#" class="px-6">our Pets</a>
-    <a href="#" class="px-6">our Pets</a>
-  
-   </div>
+    
   </div>  
 
   
 
+ 
   <div class=" mt-[8rem] md:w-[60%] w-full">
     <h1 class="text-white sm:text-8xl text-6xl  font-extrabold ">Open your <span class="text-[#00AB56]">heart</span> and your <span class="text-[#00AB56]">home</span></h1>
     <div class="mt-10">
@@ -38,11 +34,13 @@
     <button class="bg-[#00AB56] px-8 py-3 mt-4 text-center text-white font-medium md:text-xl text-base">Contact Us</button>
   </div>
 
+
   
   </div>
   <Banner/>
 
   <OurPets />
+  <Paws />
  
 
  </div>
@@ -59,7 +57,7 @@ import Banner from '../components/Banner.vue'
 import OurPets from '../components/OurPets.vue'
 import Paws from '../components/Paws.vue'
 import { computed, onMounted, ref } from "vue";
-import axiosClient from '../axiosClient';
+
 
 import { useRoute } from "vue-router";
 

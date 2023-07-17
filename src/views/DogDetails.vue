@@ -4,7 +4,7 @@
   
     <img :src=" `https://cdn2.thedogapi.com/images/${breeds.reference_image_id}.jpg`" :alt="breeds.name">
 
-    <div class=" text-lg py-2">
+    <div class=" text-lg py-2 mb-10">
       <div>
         <strong class="font-bold">breed_group:</strong> {{breeds.breed_group }}
       </div>
@@ -14,7 +14,7 @@
       <div><strong class="font-bold">weight:</strong> {{breeds.weight }}</div>
       <div><strong class="font-bold">bred_for:</strong> {{breeds.bred_for }}</div>
     </div>
-    <router-link :to="{name : 'home'}" >Back</router-link>
+    <router-link :to="{name : 'home'}" class="border-2 p-5 mt-10 bg-green-700" >Back</router-link>
     </div>
 </template>
 

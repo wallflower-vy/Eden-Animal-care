@@ -25,7 +25,7 @@
       </svg>
       <span class="sr-only">Loading...</span>
     </div>
-    <div class="grid grid-cols-3 gap-5 p-8" v-else>
+    <div class="grid md:grid-cols-3  grid-cols-1 gap-5 p-8" v-else>
       <div
         v-for="image in dogs"
         :key="image"
@@ -35,13 +35,13 @@
           <div class="img-box">
             <img
               :src="`https://cdn2.thedogapi.com/images/${image.reference_image_id}.jpg`"
-              alt="Dog Image"
+              :alt="image.name"
               class="object-cover"
             />
           </div>
         </router-link>
         <div class="p-3">
-          <p>{{ image.name }}</p>
+          <strong>{{ image.name }}</strong>
           <p class="mb-4">
             {{ image.bred_for }}
           </p>

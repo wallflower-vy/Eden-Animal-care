@@ -10,7 +10,7 @@ const store =createStore({
     getters,
 })
 export default store;
-// import { createStore } from 'vuex'
+
 // const store = createStore({
 //     state() {
 //       return {

@@ -18,7 +18,7 @@
  
    <div class="w-[55%] ">
    
-    <input type="text"    @change="searchDogs"  v-model="keyword" class="rounded w-full border-2 border-gray-200" placeholder="Search for meals"/>
+    <input type="text"    @change="searchDogs"  v-model="keyword" class="rounded w-full border-2 border-gray-200" placeholder="Search for Pet/breeds"/>
     </div>
     
   </div>  
@@ -31,7 +31,7 @@
     <div class="mt-10">
         <p class="text-white md:text-xl text-base font-medium">At our Animal Care Center, we are dedicated to providing exceptional care and support for all types of animals. Whether you have a furry friend in need of medical attention, grooming, or just want to ensure their well-being, we've got you covered.</p>
     </div>
-    <button class="bg-[#00AB56] px-8 py-3 mt-4 text-center text-white font-medium md:text-xl text-base">Contact Us</button>
+   
   </div>
 
 
